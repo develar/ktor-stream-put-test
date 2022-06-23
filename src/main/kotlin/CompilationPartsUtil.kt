@@ -5,6 +5,7 @@ package org.jetbrains.intellij.build.impl.compilation
 
 import io.ktor.client.*
 import io.ktor.client.engine.apache.*
+import io.ktor.client.engine.java.*
 import io.ktor.client.engine.okhttp.*
 import io.ktor.util.*
 import kotlinx.coroutines.Dispatchers
@@ -39,6 +40,9 @@ fun main(args: Array<String>) {
       expectSuccess = true
     }
     "okhttp" -> HttpClient(OkHttp) {
+      expectSuccess = true
+    }
+    "java" -> HttpClient(Java) {
       expectSuccess = true
     }
     else -> throw IllegalStateException("Unknown engine")
