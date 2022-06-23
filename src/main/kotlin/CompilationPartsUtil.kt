@@ -34,7 +34,7 @@ fun main(args: Array<String>) {
   }
 
   val engineName = args.firstOrNull() ?: "apache"
-  println(engineName)
+  println("Ktor engine=${engineName}, JVM=${System.getProperty("java.version")}")
   val client = when (engineName) {
     "apache" -> HttpClient(Apache) {
       expectSuccess = true
