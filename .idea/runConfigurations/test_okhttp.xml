@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="test okhttp" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="org.jetbrains.intellij.build.impl.compilation.CompilationPartsUtilKt" />
+    <module name="ktor-stream-put-test" />
+    <option name="PROGRAM_PARAMETERS" value="okhttp" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
